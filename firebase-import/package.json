@@ -1,0 +1,18 @@
+{
+  "name": "firebase-import",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "import:recommended": "node importRecommended.js",
+    "import:slides": "node importSlides.js",
+    "import:continue": "node importContinueWatching.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "firebase": "^12.1.0"
+  }
+}

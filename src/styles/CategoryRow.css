@@ -1,0 +1,44 @@
+.dplus-brands {
+  width: 100%;
+  margin-bottom: 80px;
+}
+
+.dplus-brands-row {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: nowrap;
+}
+
+.dplus-brand-card {
+  width: 200px;
+  position: relative;
+  aspect-ratio: 16 / 9;
+  padding: 12px;
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), #333333;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  box-shadow: 0 4px 6px rgba(116, 116, 116, 0.2);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.dplus-brand-card:hover,
+.dplus-brand-card:focus-visible {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+  outline: none;
+}
+
+.dplus-brand-card img {
+  width: 80%;
+  height: 80%;
+  object-fit: contain;
+  /* filter: brightness(0) invert(1); make logos visible on dark background */
+}

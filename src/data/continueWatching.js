@@ -1,0 +1,90 @@
+const continueWatching = [
+  {
+    id: "doctor-strange-multiverse",
+    title: "Doctor Strange in the Multiverse of Madness",
+    rating: "M",
+    year: 2022,
+    genres: ["Super Heroes", "Action and Adventure"],
+    image:
+      "https://static1.srcdn.com/wordpress/wp-content/uploads/2022/05/Doctor-Strange-2-Poster.jpg",
+    progress: 60, // percent
+    timeLeft: "1h 44m remaining",
+  },
+  {
+    id: "mi2",
+    title: "Mission: Impossible II",
+    rating: "M",
+    year: 2000,
+    genres: ["Action", "Espionage"],
+    image:
+      "https://images1.resources.foxtel.com.au/store2/mount1/16/4/brbyc.jpg",
+    progress: 80,
+    timeLeft: "37m remaining",
+  },
+  {
+    id: "forky-time",
+    title: "Forky Asks a Question: What is Time?",
+    rating: "G",
+    year: 2019,
+    genres: ["Comedy", "Animation"],
+    image: "https://i.ytimg.com/vi/1WAyAYPs6-U/sddefault.jpg",
+    progress: 95,
+    timeLeft: "4m remaining",
+  },
+  {
+    id: "zootopia",
+    title: "Zootopia",
+    rating: "PG",
+    year: 2016,
+    genres: ["Comedy", "Police Drama"],
+    image:
+      "https://www.fetchtv.com.au/v2/vod/titles/38659/landscape_thumbnail/334x188",
+    progress: 105,
+    timeLeft: "34m remaining",
+  },
+  {
+    id: "horton-hears-a-who",
+    title: "Dr. Seuss' Horton Hears a Who!",
+    rating: "G",
+    year: 2008,
+    genres: ["Comedy", "Animation"],
+    image: "https://i.ytimg.com/vi/Zx0KUeo6sGo/maxresdefault.jpg",
+    progress: 70,
+    timeLeft: "58m remaining",
+  },
+  {
+    id: "frozen2",
+    title: "Frozen II",
+    rating: "PG",
+    year: 2019,
+    genres: ["Action and Adventure", "Animation"],
+    image:
+      "https://disney.images.edge.bamgrid.com/ripcut-delivery/v2/variant/disney/626e8958-ec7e-4ffd-90b2-7b2fa22a8997/compose?aspectRatio=1.78&format=webp&width=1200",
+    progress: 109,
+    timeLeft: "43m remaining",
+  },
+  {
+    id: "tangled",
+    title: "Tangled",
+    rating: "PG",
+    year: 2010,
+    genres: ["Action and Adventure", "Animation"],
+    image:
+      "https://i0.wp.com/thedisinsider.com/wp-content/uploads/2021/02/scale-3.jpeg?fit=1200%2C675&ssl=1",
+    progress: 104,
+    timeLeft: "30m remaining",
+  },
+  {
+    id: "raya",
+    title: "Raya and the Last Dragon",
+    rating: "PG",
+    year: 2021,
+    genres: ["Action and Adventure", "Animation"],
+    image:
+      "https://allears.net/wp-content/uploads/2021/06/disney-raya-and-the-last-dragon-cover-photo-poster.jpg",
+    progress: 116,
+    timeLeft: "28m remaining",
+  },
+];
+
+export default continueWatching;

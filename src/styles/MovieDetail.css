@@ -1,0 +1,366 @@
+.movie-detail {
+  min-height: 100vh;
+  color: white;
+}
+
+/* Remove top padding for MovieDetail page */
+.movie-detail-fullscreen {
+  margin-top: calc(-1 * var(--nav-height));
+  padding-top: var(--nav-height);
+}
+
+.movie-detail-loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: white;
+  font-size: 1.2rem;
+}
+
+/* Common container for aligned margins */
+.movie-detail-container {
+  width: 100%;
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 0 4rem;
+}
+
+/* Hero Section */
+.movie-detail-hero {
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+}
+
+.movie-detail-content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.movie-detail-header {
+  max-width: 600px;
+}
+
+.movie-detail-title {
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+  color: #f8f8f8;
+}
+
+.movie-detail-badges {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.movie-badge {
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 0.25rem 0.75rem;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  backdrop-filter: blur(10px);
+}
+
+.movie-detail-meta {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+  font-size: 1rem;
+  color: #cccccc;
+}
+
+.movie-detail-synopsis {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+  color: #e0e0e0;
+  max-width: 500px;
+}
+
+.movie-detail-actions {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.btn-play {
+  background-color: #fff;
+  color: black;
+  border: none;
+  padding: 0.75rem 2rem;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: background-color 0.2s;
+}
+
+.btn-play:hover {
+  background-color: #333;
+}
+
+.play-icon {
+  font-size: 0.9rem;
+}
+
+.btn-trailer {
+  background-color: rgba(255, 255, 255, 0.2);
+  color: white;
+  border: none;
+  padding: 0.75rem 2rem;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  backdrop-filter: blur(10px);
+  transition: background-color 0.2s;
+}
+
+.btn-trailer:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.btn-add {
+  background-color: rgba(255, 255, 255, 0.2);
+  color: white;
+  border: none;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: blur(10px);
+  transition: background-color 0.2s;
+}
+
+.btn-add:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.btn-add.in-watchlist {
+  background-color: rgba(0, 255, 0, 0.3);
+}
+
+.btn-add.in-watchlist:hover {
+  background-color: rgba(0, 255, 0, 0.5);
+}
+
+.add-icon {
+  font-weight: 300;
+}
+
+/* Tabs Navigation */
+.movie-detail-tabs {
+  display: flex;
+  gap: 2rem;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
+  margin-top: 1rem;
+}
+
+.tab {
+  background: none;
+  border: none;
+  color: #888;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 0.5rem 0;
+  position: relative;
+  transition: color 0.2s;
+}
+
+.tab:hover {
+  color: #ccc;
+}
+
+.tab.active {
+  color: white;
+}
+
+.tab.active::after {
+  content: "";
+  position: absolute;
+  bottom: -0.5rem;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background-color: white;
+}
+
+/* Content Section */
+.movie-detail-content-section {
+  padding-bottom: 2rem;
+}
+
+.suggested-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.suggested-item {
+  cursor: pointer;
+  transition: transform 0.2s;
+  border-radius: 8px;
+  overflow: hidden;
+  background: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(10px);
+}
+
+.suggested-item:hover {
+  transform: scale(1.05);
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.suggested-image {
+  width: 100%;
+  height: 120px;
+  object-fit: cover;
+}
+
+.suggested-info {
+  padding: 1rem;
+}
+
+.suggested-info h4 {
+  margin: 0 0 0.5rem 0;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: white;
+}
+
+.suggested-info p {
+  margin: 0;
+  font-size: 0.8rem;
+  color: #888;
+  line-height: 1.4;
+}
+
+/* Extras Content */
+.extras-content {
+  text-align: center;
+  padding: 4rem 0;
+  color: #888;
+}
+
+/* Details Content */
+.details-content {
+  max-width: 600px;
+  padding-top: 2rem;
+}
+
+.detail-item {
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #333;
+}
+
+.detail-item:last-child {
+  border-bottom: none;
+}
+
+.detail-item h4 {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: white;
+}
+
+.detail-item p {
+  margin: 0;
+  color: #ccc;
+  line-height: 1.6;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .movie-detail-container {
+    padding: 0 2rem;
+  }
+
+  .movie-detail-hero {
+    height: 70vh;
+  }
+
+  .movie-detail-content {
+    gap: 1rem;
+  }
+
+  .movie-detail-title {
+    font-size: 2.5rem;
+  }
+
+  .movie-detail-actions {
+    flex-wrap: wrap;
+  }
+
+  .movie-detail-tabs {
+    gap: 1rem;
+    padding: 0.75rem 0;
+  }
+
+  .movie-detail-content-section {
+    padding: 1rem 0;
+    margin-top: 1rem;
+  }
+
+  .suggested-grid {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .movie-detail-container {
+    padding: 0 1rem;
+  }
+
+  .movie-detail-content {
+    gap: 0.75rem;
+  }
+
+  .movie-detail-title {
+    font-size: 2rem;
+  }
+
+  .movie-detail-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .btn-play,
+  .btn-trailer {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .movie-detail-tabs {
+    gap: 0.5rem;
+    padding: 0.5rem 0;
+  }
+
+  .movie-detail-content-section {
+    padding: 0.75rem 0;
+    margin-top: 0.5rem;
+  }
+
+  .suggested-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
